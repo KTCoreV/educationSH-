@@ -1,6 +1,7 @@
 #include <stdio.h> // add basic C labriray of commands
 #include <cs50.h> // addet aditional labriry writen by Harward
 
+/* ПРОБЛЕМЫ: (1) при задании нечетных цифр с 3 в конце, ошибочно подсчитывает число пенни (1 коп.) */
 void cashe (void); // anounced function prototype
 
 int main (void) { cashe (); } // main is short cause all job is done in f cashe
