@@ -5,10 +5,16 @@
 int main (void) {
     printf ("Enter Your full name\n"); 
     string FIO = get_string();
-    printf ("%c", FIO[0]); //printing first letter
-    for (int i=1; i<strlen(FIO); i++){
+    if (FIO[0]) { 
+        if (FIO[0]>=96 && FIO[0]<123) printf ("%c", FIO[0]-32); // to upper case
+        else printf ("%c", FIO[0]); // printing leter after space
+    } //if1
+    for (int i=0; i<strlen(FIO); i++){
     //if (FIO[i]>=65 && FIO[i]<91) printf ("%c", FIO[i]); // solution 1 select capital letters
-    if (FIO[i]==' ') printf ("%c", FIO[i+1]); // solurion 2 select i+1 letter after space 
+    if (FIO[i]==' ') { // solution 2 select i+1 letter after space
+        if (FIO[i+1]>=96 && FIO[i+1]<123) printf ("%c", FIO[i+1]-32); // to upper case
+        else printf ("%c", FIO[i+1]); // printing leter after space
+    } //if2
     }//for
     printf ("\nYour full name is: %s\n", FIO);
 } //main
