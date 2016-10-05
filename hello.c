@@ -1,4 +1,4 @@
-#include <stdio.h> // addet basic C labriray
+#include <stdio.h> // added basic C labriray
 
 int main (void) // int main recives nothing
 {
