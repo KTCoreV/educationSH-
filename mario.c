@@ -9,7 +9,9 @@ int main (void) { pyramid (); } // main is short cause all job is done in f pyra
 
 void pyramid (void) {
     printf ("Enter a number form 0 to 23\n");
-    int n = get_int(); char nz=' '; char nb= '#'; 
+    int n = get_int(); 
+    char nz=' '; char nb= '#'; //markers for printing mario level
+    
     if (n<=23 && n>=0) { // check if valid number entered by USER
         for (int i=1; i<=n; i++) // creating a level (row) of blocks
         {
